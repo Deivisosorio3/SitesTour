@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.sitestour.MainActivity">
+
+    <Button
+        android:id="@+id/btn_hotel"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Hotel"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/boton"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_restaurantes"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Restaurantes"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@color/boton"
+        android:background="@color/segundo_boton"/>
+
+    <Button
+        android:id="@+id/btn_museo"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="museo"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/boton"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_iglesia"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="iglesia"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@color/boton"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_c_comercial"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="C.Comercial"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/boton"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:id="@+id/btn_lugares"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="lugares"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@color/boton"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/boton"
+        android:text="salir"
+        android:textColor="@color/segundo_boton"/>
+</RelativeLayout>
