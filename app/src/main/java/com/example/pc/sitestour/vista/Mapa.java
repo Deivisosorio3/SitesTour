@@ -3,6 +3,7 @@ package com.example.pc.sitestour.vista;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.example.pc.sitestour.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
