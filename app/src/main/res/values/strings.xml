@@ -2,4 +2,18 @@
     <string name="app_name">SitesTour</string>
     <string name="title_activity_sitios">Sitios</string>
     <string name="title_activity_mapa">Map</string>
+    <string name="txt_hotel">Hotel</string>
+    <string name="txt_restaurantes">Restaurantes</string>
+    <string name="txt_museo">Museo</string>
+    <string name="txt_iglesia">Iglesia</string>
+    <string name="txt_c_comercial">C. Comercial</string>
+    <string name="txt_lugares">Lugares</string>
+    <string name="txt_salir">Salir</string>
+    <string name="txt_sitios"> Tipos De Sitios (Segun su selecion)</string>
+    <string name="txt_ver_todos">Ver Todos</string>
+
+
+
+
+
 </resources>

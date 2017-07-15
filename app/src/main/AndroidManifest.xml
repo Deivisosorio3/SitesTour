@@ -9,7 +9,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
         android:name="com.orm.SugarApp"
         android:allowBackup="true"
@@ -25,7 +25,7 @@
         <meta-data android:name="QUERY_LOG" android:value="true" />
         <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".vista.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

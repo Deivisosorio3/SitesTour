@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SitesTour</string>
+    <string name="title_activity_sitios">places</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="txt_hotel">Hotel</string>
+    <string name="txt_restaurantes">restaurants</string>
+    <string name="txt_museo">Museum</string>
+    <string name="txt_iglesia">church</string>
+    <string name="txt_c_comercial">Mall</string>
+    <string name="txt_lugares">places</string>
+    <string name="txt_salir">get out</string>
+    <string name="txt_sitios">Types of Sites, (According to your selection)</string>
+    <string name="txt_ver_todos">see all</string>
+
+</resources>
