@@ -33,22 +33,28 @@ public class Sitios extends AppCompatActivity {
         String tipo=getIntent().getStringExtra("nombre");
         if (tipo=="Iglesias"){
             lugares=controladorLugares.consultarTipoT(tipo);
+            llenarListas();
 
 
 
         }else if (tipo=="Hoteles"){
             lugares=controladorLugares.consultarTipoT(tipo);
+            llenarListas();
 
         }else if (tipo=="Restaurantes"){
 
             lugares=controladorLugares.consultarTipoT(tipo);
+            llenarListas();
            }else if (tipo=="Centro Comerciales") {
             lugares=controladorLugares.consultarTipoT(tipo);
+            llenarListas();
         }  else if (tipo=="Lugares"){
             lugares=controladorLugares.consultarTipoT(tipo);
+            llenarListas();
 
           }else if (tipo=="Museos"){
             lugares=controladorLugares.consultarTipoT(tipo);
+            llenarListas();
 
         }
 
