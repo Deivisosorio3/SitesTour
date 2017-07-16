@@ -1,5 +1,6 @@
 package com.example.pc.sitestour.vista;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -63,7 +64,7 @@ public class Sitios extends AppCompatActivity {
     }
     public void llenarListas(){
 
-        String[] lugar= new String[lugares.size()];
+        final String[] lugar= new String[lugares.size()];
         for (int f=0;f<lugares.size();f++){
             lugar[f]=lugares.get(f).getNombre();
         }
@@ -73,6 +74,11 @@ public class Sitios extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(Sitios.this, "Sitios Turisticos", Toast.LENGTH_SHORT).show();
+                Intent i= new  Intent(Sitios.this,Mapa.class);
+                i.putExtra("nom", lugar[position]);
+                startActivity(i);
+                finish();
+
             }
         });
 
