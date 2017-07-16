@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
         lugares.add(new Lugares("Policia metropolitana de popayan","Lugares","2.454821", "-76.601806"));
 
 
+        controladorLugares.llenarSitios(lugares);
+
+
 
     }
     public void hoteles(View v){
