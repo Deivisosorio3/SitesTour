@@ -16,7 +16,8 @@
     android:textSize="@dimen/txt_sitios"
     android:layout_marginLeft="40dp"
     android:textStyle="bold"
-    android:textColor="@color/txt_tex"/>
+    android:textColor="@color/t
+    xt_tex"/>
 
     <ListView
         android:id="@+id/lis_lugares"
@@ -24,7 +25,7 @@
         android:layout_height="350dp"
         android:layout_marginTop="90dp"
         android:layout_centerHorizontal="true"
-        android:background=""/>
+        android:background="@color/lis_view"/>
 
     <Button
         android:id="@+id/btn_ver_todos"
