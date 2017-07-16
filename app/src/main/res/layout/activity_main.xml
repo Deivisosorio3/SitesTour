@@ -10,73 +10,81 @@
         android:id="@+id/btn_hotel"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="@string/txt_hotel"
-        android:layout_marginTop="70dp"
         android:layout_marginLeft="40dp"
-        android:textColor="@color/boton"
+        android:layout_marginTop="70dp"
         android:background="@color/segundo_boton"
+        android:onClick="hoteles"
+        android:text="@string/txt_hotel"
+        android:textColor="@color/boton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btn_restaurantes"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="@string/txt_restaurantes"
-        android:layout_marginTop="70dp"
         android:layout_marginLeft="200dp"
-        android:textColor="@color/boton"
-        android:background="@color/segundo_boton"/>
+        android:layout_marginTop="70dp"
+        android:background="@color/segundo_boton"
+        android:onClick="restaurantes"
+        android:text="@string/txt_restaurantes"
+        android:textColor="@color/boton" />
 
     <Button
         android:id="@+id/btn_museo"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="@string/txt_museo"
-        android:layout_marginTop="150dp"
         android:layout_marginLeft="40dp"
-        android:textColor="@color/boton"
+        android:layout_marginTop="150dp"
         android:background="@color/segundo_boton"
+        android:onClick="museos"
+        android:text="@string/txt_museo"
+        android:textColor="@color/boton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btn_iglesia"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="@string/txt_iglesia"
-        android:layout_marginTop="150dp"
         android:layout_marginLeft="200dp"
-        android:textColor="@color/boton"
+        android:layout_marginTop="150dp"
         android:background="@color/segundo_boton"
+        android:onClick="iglesias"
+        android:text="@string/txt_iglesia"
+        android:textColor="@color/boton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btn_c_comercial"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="@string/txt_c_comercial"
-        android:layout_marginTop="230dp"
         android:layout_marginLeft="40dp"
-        android:textColor="@color/boton"
+        android:layout_marginTop="230dp"
         android:background="@color/segundo_boton"
+        android:onClick="centroC"
+        android:text="@string/txt_c_comercial"
+        android:textColor="@color/boton"
         tools:ignore="HardcodedText" />
+
     <Button
         android:id="@+id/btn_lugares"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="@string/txt_lugares"
-        android:layout_marginTop="230dp"
         android:layout_marginLeft="200dp"
-        android:textColor="@color/boton"
+        android:layout_marginTop="230dp"
         android:background="@color/segundo_boton"
+        android:onClick="lugares"
+        android:text="@string/txt_lugares"
+        android:textColor="@color/boton"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btn_salir"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="350dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
         android:background="@color/boton"
+        android:onClick="salir"
         android:text="@string/txt_salir"
-        android:textColor="@color/segundo_boton"/>
+        android:textColor="@color/segundo_boton" />
 </RelativeLayout>

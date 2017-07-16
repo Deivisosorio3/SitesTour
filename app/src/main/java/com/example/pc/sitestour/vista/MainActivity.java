@@ -15,19 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void hotel(View v){
+    public void hoteles(View v){
         Intent i =new Intent(MainActivity.this,Sitios.class);
         startActivity(i);
         finish();
 
     }
-    public void restaurante(View v){
+    public void restaurantes(View v){
         Intent i =new Intent(MainActivity.this,Sitios.class);
         startActivity(i);
         finish();
 
     }
-    public void museo(View v){
+    public void museos(View v){
         Intent i =new Intent(MainActivity.this,Sitios.class);
         startActivity(i);
         finish();
@@ -45,9 +45,15 @@ public class MainActivity extends AppCompatActivity {
         finish();
 
     }
+
     public void lugares(View v){
         Intent i =new Intent(MainActivity.this,Sitios.class);
         startActivity(i);
+        finish();
+
+    }
+    public void salir(View v){
+
         finish();
 
     }
