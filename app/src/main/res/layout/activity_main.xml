@@ -6,85 +6,176 @@
     android:layout_height="match_parent"
     tools:context="com.example.pc.sitestour.vista.MainActivity">
 
-    <Button
+    <RelativeLayout
         android:id="@+id/btn_hotel"
-        android:layout_width="130dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/segundo_boton"
-        android:onClick="hoteles"
-        android:text="@string/txt_hotel"
-        android:textColor="@color/boton"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/hotel"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_hotel"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
 
-    <Button
+
+
+    <RelativeLayout
         android:id="@+id/btn_restaurantes"
-        android:layout_width="130dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/segundo_boton"
-        android:onClick="restaurantes"
-        android:text="@string/txt_restaurantes"
-        android:textColor="@color/boton" />
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/restaurantes"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_restaurantes"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
 
-    <Button
+    <RelativeLayout
         android:id="@+id/btn_museo"
-        android:layout_width="130dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/segundo_boton"
-        android:onClick="museos"
-        android:text="@string/txt_museo"
-        android:textColor="@color/boton"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/museo"
+        android:layout_marginLeft="10dp"/>
 
-    <Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_museo"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+    <RelativeLayout
         android:id="@+id/btn_iglesia"
-        android:layout_width="130dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/segundo_boton"
-        android:onClick="iglesias"
-        android:text="@string/txt_iglesia"
-        android:textColor="@color/boton"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/vaticano"
+            android:layout_marginLeft="10dp"/>
 
-    <Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_iglesia"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/btn_c_comercial"
-        android:layout_width="130dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="50dp"
         android:background="@color/segundo_boton"
-        android:onClick="centroC"
-        android:text="@string/txt_c_comercial"
-        android:textColor="@color/boton"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/centro"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_c_comercial"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
 
-    <Button
+
+    </RelativeLayout>
+    <RelativeLayout
         android:id="@+id/btn_lugares"
-        android:layout_width="130dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="230dp"
-        android:background="@color/segundo_boton"
-        android:onClick="lugares"
-        android:text="@string/txt_lugares"
-        android:textColor="@color/boton"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/btn_salir"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
-        android:background="@color/boton"
-        android:onClick="salir"
-        android:text="@string/txt_salir"
-        android:textColor="@color/segundo_boton" />
+        android:layout_marginLeft="50dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/lugares"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_lugares"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_salir"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/salir"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_salir"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
 </RelativeLayout>
