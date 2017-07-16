@@ -15,7 +15,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="hoteles">
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
@@ -41,7 +42,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="restaurantes">
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
@@ -65,7 +67,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="museos">
     <ImageView
         android:layout_width="50dp"
         android:layout_height="40dp"
@@ -91,7 +94,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="iglesias">
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
@@ -118,7 +122,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="centroC">
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
@@ -143,7 +148,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="lugares">
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
@@ -170,7 +176,8 @@
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
         android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:onClick="salir">
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
