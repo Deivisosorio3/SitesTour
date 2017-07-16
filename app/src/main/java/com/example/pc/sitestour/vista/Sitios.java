@@ -6,8 +6,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.pc.sitestour.R;
 import com.example.pc.sitestour.controlador.ControladorLugares;
@@ -67,6 +69,12 @@ public class Sitios extends AppCompatActivity {
         }
         ArrayAdapter<CharSequence> arrayAdapter=new ArrayAdapter<CharSequence>(this,android.R.layout.simple_list_item_1,lugar);
         listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(Sitios.this, "Sitios Turisticos", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
