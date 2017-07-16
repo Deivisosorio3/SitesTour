@@ -29,16 +29,12 @@ public class ControladorLugares {
     public Lugares consultarTipoU(String nombre){
         List<Lugares> lu= Lugares.find(Lugares.class,"nombre = ? ",nombre);
 
-
-
-  return lu.get(0);
+        return lu.get(0);
     }
+
+
     public List<Lugares>  consultarTipoT(String tipo){
         List<Lugares> lu= Lugares.find(Lugares.class,"tipo = ?",tipo);
-
-
-
-
 
         return lu;
     }
