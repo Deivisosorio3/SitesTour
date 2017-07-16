@@ -37,22 +37,22 @@ public class Sitios extends AppCompatActivity {
 
 
 
-        }else if (tipo=="Hoteles"){
+        }else if (tipo.equals("Hoteles")){
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
 
-        }else if (tipo=="Restaurantes"){
+        }else if (tipo.equals("Restaurantes")){
 
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
-           }else if (tipo=="Centro Comerciales") {
+           }else if (tipo.equals("Centro Comerciales")) {
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
-        }  else if (tipo=="Lugares"){
+        }  else if (tipo.equals("Lugares")){
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
 
-          }else if (tipo=="Museos"){
+          }else if (tipo.equals("Museos")){
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
 
