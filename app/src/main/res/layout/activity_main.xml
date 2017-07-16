@@ -10,7 +10,7 @@
         android:id="@+id/btn_hotel"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"
         android:background="@color/segundo_boton"
         tools:ignore="HardcodedText"
