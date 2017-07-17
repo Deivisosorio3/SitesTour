@@ -35,11 +35,9 @@ public class Sitios extends AppCompatActivity {
 
         controladorLugares=new ControladorLugares();
          tipo=getIntent().getStringExtra("nombre");
-        if (tipo=="Iglesias"){
+        if (tipo.equals("Iglesias")){
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
-
-
 
         }else if (tipo.equals("Hoteles")){
             lugares=controladorLugares.consultarTipoT(tipo);
@@ -49,7 +47,7 @@ public class Sitios extends AppCompatActivity {
 
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
-           }else if (tipo.equals("Centro Comerciales")) {
+           }else if (tipo.equals("Centros Comerciales")) {
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
         }  else if (tipo.equals("Lugares")){
@@ -94,7 +92,4 @@ public class Sitios extends AppCompatActivity {
 
 
     }
-
-
-
 }
