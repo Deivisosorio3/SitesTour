@@ -13,6 +13,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.List;
+
 public class Mapa extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -45,9 +47,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
         String lugar=getIntent().getStringExtra("nom");
         String tipo=getIntent().getStringExtra("nomb");
         if (tipo == null){
@@ -55,7 +55,18 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
             Lugares lugares= controladorLugares.consultarTipoU(lugar);
             LatLng coordenadas=new LatLng(Double.parseDouble(lugares.getUbicacionLat()),Double.parseDouble(lugares.getUbicacionLon()));
             mMap.addMarker(new MarkerOptions().position(coordenadas));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(coordenadas,16f));
         }else {  //el usuario dio click en ver todos
+            List<Lugares> lis =controladorLugares.consultarTipoT(tipo);
+            for (int f=0;f<lis.size();f++){
+                Lugares tLugar=lis.get(f);
+                LatLng coordenadas2=new LatLng(Double.parseDouble(tLugar.getUbicacionLat()),Double.parseDouble(tLugar.getUbicacionLon()));
+                mMap.addMarker(new MarkerOptions().position(coordenadas2));
+
+            }
+            Lugares tLugar=lis.get(0);
+            LatLng coordenadas2=new LatLng(Double.parseDouble(tLugar.getUbicacionLat()),Double.parseDouble(tLugar.getUbicacionLon()));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(coordenadas2,16f));
 
         }
     }
