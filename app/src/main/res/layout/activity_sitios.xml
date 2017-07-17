@@ -30,11 +30,12 @@
         android:id="@+id/btn_ver_todos"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="@string/txt_ver_todos"
-        android:layout_marginTop="470dp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/segundo_boton"
-        android:background="@color/boton"/>
+        android:layout_marginTop="470dp"
+        android:background="@color/boton"
+        android:onClick="verTodos"
+        android:text="@string/txt_ver_todos"
+        android:textColor="@color/segundo_boton" />
 
 
 
