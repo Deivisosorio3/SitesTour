@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ArrayList<Lugares> lugares= new ArrayList<>() ;
         ControladorLugares controladorLugares =new ControladorLugares();
-        if (controladorLugares.consultarTipoU("Plaza Colonial")==null) {
+        if (controladorLugares.consultarTipoT("Hoteles").size()==0) {
 
 
             //Centros Comerciales:
