@@ -29,7 +29,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         controladorLugares=new ControladorLugares();
         String lugar=getIntent().getStringExtra("nom");
         String tipo=getIntent().getStringExtra("nomb");
-        if (tipo.equals("")){
+        if (tipo.equals(null)){
 
             Lugares lugares= controladorLugares.consultarTipoU(lugar);
             LatLng coordenadas=new LatLng(Double.parseDouble(lugares.getUbicacionLat()),Double.parseDouble(lugares.getUbicacionLon()));
