@@ -23,6 +23,7 @@ public class Sitios extends AppCompatActivity {
     ControladorLugares controladorLugares;
     ListView listView;
     List<Lugares> lugares;
+    String tipo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class Sitios extends AppCompatActivity {
 
 
         controladorLugares=new ControladorLugares();
-        String tipo=getIntent().getStringExtra("nombre");
+         tipo=getIntent().getStringExtra("nombre");
         if (tipo=="Iglesias"){
             lugares=controladorLugares.consultarTipoT(tipo);
             llenarListas();
@@ -82,6 +83,14 @@ public class Sitios extends AppCompatActivity {
             }
         });
 
+
+
+    }
+    public void  verTodos (View v){
+
+        Intent i =new Intent(Sitios.this,Mapa.class);
+        i.putExtra("nomb",tipo);
+        startActivity(i);
 
 
     }

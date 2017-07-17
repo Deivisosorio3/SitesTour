@@ -4,6 +4,8 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
 import com.example.pc.sitestour.R;
+import com.example.pc.sitestour.controlador.ControladorLugares;
+import com.example.pc.sitestour.modelo.Lugares;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -14,6 +16,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Mapa extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    ControladorLugares controladorLugares;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,17 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        controladorLugares=new ControladorLugares();
+        String lugar=getIntent().getStringExtra("nom");
+        String tipo=getIntent().getStringExtra("nomb");
+        if (tipo.equals("")){
+
+            Lugares lugares= controladorLugares.consultarTipoU(lugar);
+            LatLng coordenadas=new LatLng(Double.parseDouble(lugares.getUbicacionLat()),Double.parseDouble(lugares.getUbicacionLon()));
+            mMap.addMarker(new MarkerOptions().position(coordenadas));
+        }else {  //el usuario dio click en ver todos
+
+        }
     }
 
 
