@@ -27,16 +27,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         controladorLugares=new ControladorLugares();
-        String lugar=getIntent().getStringExtra("nom");
-        String tipo=getIntent().getStringExtra("nomb");
-        if (tipo == null){
 
-            Lugares lugares= controladorLugares.consultarTipoU(lugar);
-            LatLng coordenadas=new LatLng(Double.parseDouble(lugares.getUbicacionLat()),Double.parseDouble(lugares.getUbicacionLon()));
-            mMap.addMarker(new MarkerOptions().position(coordenadas));
-        }else {  //el usuario dio click en ver todos
-
-        }
     }
 
 
@@ -57,5 +48,15 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback {
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        String lugar=getIntent().getStringExtra("nom");
+        String tipo=getIntent().getStringExtra("nomb");
+        if (tipo == null){
+
+            Lugares lugares= controladorLugares.consultarTipoU(lugar);
+            LatLng coordenadas=new LatLng(Double.parseDouble(lugares.getUbicacionLat()),Double.parseDouble(lugares.getUbicacionLon()));
+            mMap.addMarker(new MarkerOptions().position(coordenadas));
+        }else {  //el usuario dio click en ver todos
+
+        }
     }
 }
