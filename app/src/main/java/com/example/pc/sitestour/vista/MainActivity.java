@@ -47,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
             lugares.add(new Lugares("Arepas Doña Torta", "Restaurantes", "2.461296", "-76.586804"));
             lugares.add(new Lugares("Asadero Cali & Cali", "Restaurantes", "2.456987", "-76.590184"));
 
+            //Museos:
+
+
+            lugares.add(new Lugares("Museo de Historia Natural Universidad del Cauca", "Museos", "2.443811","-76.597197"));
+            lugares.add(new Lugares("Museo Negret E Iberoamericano De Arte Moderno", "Museos", "2.442757", "-76.609679"));
+            lugares.add(new Lugares("Museo Arquidiocesano de Arte Religioso ", "Museos", "2.441996", "-76.604379"));
+            lugares.add(new Lugares("Museo Nacional Guillermo Valencia", "Museos", "2.443079", "-76.604916"));
+            lugares.add(new Lugares("Panteón de Los Proceres", "Museos", "2.442886", "-76.606096"));
+
             //hoteles
             lugares.add(new Lugares("Puerta del Sol", "Hoteles", "2.451019", "-76.609579"));
             lugares.add(new Lugares("Los Andes", "Hoteles", "2.446539", "-76.613399"));
