@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.sitestour.vista.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/btn_hotel"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="hoteles"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/hotel"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_hotel"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/btn_restaurantes"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="restaurantes"
+        android:layout_alignTop="@+id/btn_hotel"
+        android:layout_toRightOf="@+id/btn_museo"
+        android:layout_toEndOf="@+id/btn_museo"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/restaurantes"
+            android:layout_marginLeft="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_restaurantes"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_museo"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="museos"
+        android:layout_below="@+id/btn_hotel"
+        android:layout_alignLeft="@+id/btn_hotel"
+        android:layout_alignStart="@+id/btn_hotel">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/museo"
+        android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_museo"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/btn_iglesia"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="iglesias"
+        android:layout_alignTop="@+id/btn_museo"
+        android:layout_alignLeft="@+id/btn_restaurantes"
+        android:layout_alignStart="@+id/btn_restaurantes">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/vaticano"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_iglesia"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_c_comercial"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="centroC"
+        android:layout_below="@+id/btn_iglesia"
+        android:layout_alignLeft="@+id/btn_museo"
+        android:layout_alignStart="@+id/btn_museo">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/comercial"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_c_comercial"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/btn_lugares"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="lugares"
+        android:layout_alignTop="@+id/btn_c_comercial"
+        android:layout_alignLeft="@+id/btn_iglesia"
+        android:layout_alignStart="@+id/btn_iglesia">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/lugares"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_lugares"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_salir"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/segundo_boton"
+        tools:ignore="HardcodedText"
+        android:orientation="horizontal"
+        android:onClick="salir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@mipmap/salir"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_salir"
+            android:textColor="@color/boton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
